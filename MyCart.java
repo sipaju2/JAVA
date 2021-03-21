@@ -20,13 +20,15 @@ public class MyCart {
         ProductItems item7 = new ProductItems("juice", 3, 2.5);
 
         ArrayList<ProductItems> items = new ArrayList<ProductItems>();
-        items.add(item4);
-        items.add(item1);
-        items.add(item2);
-        items.add(item3);
-        items.add(item5);
-        items.add(item6);
-        items.add(item7);
+         if (items.isEmpty()) {
+            items.add(item4);
+            items.add(item1);
+            items.add(item2);
+            items.add(item3);
+            items.add(item5);
+            items.add(item6);
+            items.add(item7);
+        }
 
         if (!items.isEmpty()) {
             for (ProductItems item : items) {
